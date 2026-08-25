@@ -7,6 +7,7 @@ const student = ref()
 
 function handleStudentSubmitted(studentInfo) {
   student.value = studentInfo
+  console.log(studentInfo)
 }
 </script>
 

@@ -18,9 +18,13 @@ function submitStudent() {
     email: email.value
   }
 
-  console.log('Student Information:', studentInfo)
-
   emit('student-submitted', studentInfo)
+
+  name.value = ''
+  studentId.value = ''
+  course.value = ''
+  yearLevel.value = ''
+  email.value = ''
 }
 </script>
 
